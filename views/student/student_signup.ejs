@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Signup</title>
+  <link rel="stylesheet" href="/css/student.css">
+</head>
+<body>
+  <header>
+    <h1>Student Signup</h1>
+  </header>
+  <div class="container">
+    <form action="/student/signup" method="post" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="enrollment" placeholder="Enrollment ID" required>
+      <input type="text" name="branch" placeholder="Branch" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="file" name="photo" accept="image/*">
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="/student/login">Login</a></p>
+  </div>
+</body>
+</html>
